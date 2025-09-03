@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Journal App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Daily Journal</h1>
+    <div class="date-section">
+      <label for="date">Date:</label>
+      <input type="date" id="date" value="">
+    </div> 
+    <div class="toolbar">
+      <button id="bold-btn" title="Bold"><b>B</b></button>
+      <button id="italic-btn" title="Italic"><i>I</i></button>
+      <button id="heading-btn" title="Heading">H</button>
+    </div>
+    <div id="editor" contenteditable="true" class="editor"></div>
+    <div class="actions">
+      <button id="save-btn">Save Entry</button>
+    </div>
+    <div class="search-section">
+      <h2>Search Entries</h2>
+      <input type="date" id="search-date">
+      <button id="load-btn">Load Entry</button>
+    </div> 
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
